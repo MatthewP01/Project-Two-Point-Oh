@@ -3,6 +3,10 @@ class TanksController < ApplicationController
   def show
     @tank = Tank.find(params[:id])
     render :show
+    if params[:press]
+      @tank.money += 1
+      @tank.save
+    end
   end
 
   def new
