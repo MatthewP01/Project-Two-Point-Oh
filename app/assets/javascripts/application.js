@@ -14,3 +14,7 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+// document.querySelector("#tank_form").addEventListener("submit", function(e){
+//   e.preventDefault()
+//   console.log("works")
+// })

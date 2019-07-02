@@ -27,6 +27,13 @@ class TanksController < ApplicationController
     end
   end
 
+  def press
+    tank = Tank.find(params[:id])
+    tank.money += 1
+    tank.save
+    redirect_to tank_path(tank)
+  end
+
   private
 
   def tank_params

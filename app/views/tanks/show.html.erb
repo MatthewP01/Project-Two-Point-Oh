@@ -5,8 +5,10 @@
 
 <%# link_to "Add a 💚", "/posts/#{@post.id}?like=true" %>
 
-<button type="button" class="button">
-  <div class="button_link">
-    <%= link_to "PRE$$", "/tanks/#{@tank.id}?press=true"%>
-  </div>
-</button>
+  <!-- <div class="button_link">
+    <%#= link_to "PRE$$", "/tanks/#{@tank.id}?press=true"%>
+  </div> -->
+
+
+
+  <%= button_to "PRE$$", "/tanks/#{@tank.id}/press", remote: true, class: "button"%>
