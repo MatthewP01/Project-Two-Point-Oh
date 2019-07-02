@@ -10,7 +10,7 @@
 	  		<%= form_tag purchase_path do %>
 			  	<label>Tank:</label>
 			  	<%= collection_select :tank, :id, Tank.all, :id, :name %>
-			  	<%= hidden_field_tag 'fish_id', '#{fish.id}' %>
+			  	<%= hidden_field_tag 'fish_id', fish.id %>
 			  	<%= submit_tag "Buy" %>
 	  		<% end %>
 	  	</div>
