@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Hind+Siliguri');
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Barriecito');
 
 html,body{
 background-image: url('https://cdn.pixabay.com/photo/2018/04/21/00/03/fantasy-3337385_960_720.jpg');
@@ -170,6 +172,81 @@ margin-left: 4px;
   font-size: 3.0em;
 
   /* height: 100px; */
+}
+
+
+/* Tank New */
+
+.tank_header{
+  margin-left: 489px;
+  position: relative;
+  top: 190px;
+  color: #CEF0D4;
+  font-family: 'Righteous', regular;
+  font-size: 70px;
+  font-weight: normal;
+  text-shadow: 1px 1px 2px #082b34;
+}
+
+.tank_form{
+  margin: auto;
+  width: 50%;
+  /* padding: 300px; */
+  /* align-left: 190px; */
+  position: relative;
+  top: 280px;
+  left: 290px;
+}
+
+.tank_submit {
+  margin-left: -5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Barriecito", regular;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 4px;
+  position: relative;
+  background-color: rgb(142,131,200);
+  border: none;
+  color: #fff;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  box-shadow: 0 5px 15px #193047;
+  border-radius: 4px;
+}
+
+.tank_submit:hover {
+  background: cyan;
+  box-shadow: 0px 2px 10px 5px #1abc9c;
+  color: #000;
+}
+
+.tank_submit:after {
+  content: "";
+  background: #1abc9c;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.tank_submit:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.tank_submit:focus {
+  outline:0;
 }
 
 /* Tank Index */
