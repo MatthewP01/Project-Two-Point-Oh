@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2019_07_02_140034) do
 
   create_table "tanks", force: :cascade do |t|
     t.string "name"
-    t.integer "money"
+    t.integer "money", default: 0
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
