@@ -164,3 +164,8 @@ margin-left: 4px;
 .tanks_body{
   background-image: url('https://cdnb.artstation.com/p/assets/images/images/016/241/647/large/adam-homoki-cartoonwatersahder-lake.jpg?1551433480') !important;
 }
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
