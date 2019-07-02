@@ -12,17 +12,25 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 
   </head>
-  <body>
+<div class="tank_body">
+
+  <% if flash[:error] %>
+  <div class="alert alert-primary" role="alert">
+    <%= flash[:error]%>
+  <% end %>
+  </div>
+
 
   <div class="tank_header">
   <h1>Create a New Tank!</h1>
   </div>
 
+  <div class="tank_form">
+    <%= form_for @tank do |f| %>
+    <%= f.text_field :name %>
+    <%= f.hidden_field :user_id, :value => @user.id %>
+    <%= f.submit %>
+    <% end %>
+  </div>
 
-  <%= form_for @tank do |f| %>
-  <%= f.text_field :name %>
-  <%= f.hidden_field :user_id, :value => @user.id %>
-  <%= f.submit %>
-  <% end %>
-  </body>
-</div>
+  </div>
