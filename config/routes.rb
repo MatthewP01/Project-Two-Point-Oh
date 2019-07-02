@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get "/register", to: "users#new"
   get "/login", to: "sessions#new"
   post "/sessions", to: "sessions#create"
+  post "/purchase", to: "tanks#purchase"
   post "/tanks/:id/press", to: "tanks#press"
 
 end

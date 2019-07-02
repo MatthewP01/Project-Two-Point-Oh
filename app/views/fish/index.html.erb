@@ -6,8 +6,15 @@
 	  <div class="card-body">
 	  	<%= fish.name %><br>
 	  	<div class="fishpic">
-	  		<%= image_tag "#{fish.id}.png", size: "150x150", alt: "#{fish.name}" %>
+	  		<%= image_tag "#{fish.id}.png", size: "150x150", alt: "#{fish.name}" %><br><br>
+	  		<%= form_tag purchase_path do %>
+			  	<label>Tank:</label>
+			  	<%= collection_select :tank, :id, Tank.all, :id, :name %>
+			  	<%= hidden_field_tag 'fish_id', fish.id %>
+			  	<%= submit_tag "Buy" %>
+	  		<% end %>
 	  	</div>
+	
 	  </div>
 	</div>
 <% end %> 

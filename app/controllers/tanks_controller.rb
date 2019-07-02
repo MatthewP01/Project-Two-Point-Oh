@@ -27,6 +27,19 @@ class TanksController < ApplicationController
     end
   end
 
+  def purchase
+    
+    @tank = Tank.find(params[:tank][:id])
+    @fish = Fish.find(params[:fish_id])
+    @tank.fish << @fish
+    @tank.save
+    byebug
+
+  end
+
+
+
+
   def press
     tank = Tank.find(params[:id])
     tank.money += 1
