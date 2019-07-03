@@ -180,9 +180,10 @@ margin-left: 4px;
 /* Tank New */
 
 .tank_header{
-  margin-left: 489px;
+  /* margin-left: 489px; */
   position: relative;
   top: 190px;
+  text-align: center;
   color: #CEF0D4;
   font-family: 'Righteous', regular;
   font-size: 70px;
