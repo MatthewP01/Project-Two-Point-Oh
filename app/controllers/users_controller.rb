@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
 
   # before_action :authorized, only: [:show]
+  skip_before_action :authorized, only: [:new, :create]
 
   def index
     @users = User.all
@@ -17,7 +18,7 @@ class UsersController < ApplicationController
       @user.save
       session[:user_id] = @user.id
       # byebug
-      redirect_to users_path
+      redirect_to "/tanks/#{@user.id}"
     else
       flash.now[:error] = @user.errors.full_messages
       render :new

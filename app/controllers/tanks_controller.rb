@@ -1,7 +1,9 @@
 class TanksController < ApplicationController
 
+  before_action :authorized
+
   def index
-    @tanks = Tank.all
+    # @tanks = Tank.all
     render :index
   end
 
@@ -24,8 +26,9 @@ class TanksController < ApplicationController
   def create
     @tank = Tank.new(tank_params)
     if @tank.valid?
+      current_user.tanks << @tank
       @tank.save
-      redirect_to tank_path(@tank)
+      redirect_to "/tanks/#{@tank.id}"
     else
       flash.now[:error] = @tank.errors.full_messages
       render :new
@@ -41,6 +44,7 @@ class TanksController < ApplicationController
       @tank.money -= @fish.cost
       @tank.fish << @fish
       @tank.save
+      redirect_to "tanks/#{@tank.id}"
     else
 
       if @tank.fish.include?(@fish)
@@ -57,7 +61,7 @@ class TanksController < ApplicationController
     tank = Tank.find(params[:id])
     tank.money += 1
     tank.save
-    redirect_to tank_path(tank)
+    redirect_to "/tanks/#{tank.id}"
   end
 
   private

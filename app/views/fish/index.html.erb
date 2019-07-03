@@ -4,6 +4,8 @@
 	</div>
 <% end %>
 
+<%=  %>
+
 <body class="fish_market">
 <h1 class="market-title">Market</h1>
 <div class="card-columns">
@@ -18,7 +20,7 @@
 	  		<%= form_tag purchase_path do %>
 	  			<label class="price">Price: $<%= fish.cost %></label><br>
 			  	<label class = "price">Tank:</label>
-			  	<%= collection_select :tank, :id, Tank.all, :id, :name, class: "price" %>
+			  	<%= collection_select :tank, :id, Tank.all, :id, :name_and_money, class: "price" %>
 			  	<%= hidden_field_tag 'fish_id', fish.id %>
 			  	<%= submit_tag "Buy" , class: "price"%>
 	  		<% end %>

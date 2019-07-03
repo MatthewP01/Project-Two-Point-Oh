@@ -5,4 +5,8 @@ class Tank < ApplicationRecord
 
   validates :name, presence: true
 
+  def name_and_money
+    "#{self.name} - $#{self.money}"
+  end
+
 end

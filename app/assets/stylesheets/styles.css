@@ -188,9 +188,10 @@ margin-left: 4px;
 
 .tank_header{
   /* margin-left: 489px; */
-  position: relative;
-  top: 190px;
-  text-align: center;
+  position: absolute;
+  left: 380px;
+  top: 150px;
+  /* text-align: center; */
   color: #CEF0D4;
   font-family: 'Righteous', regular;
   font-size: 70px;
@@ -203,9 +204,10 @@ margin-left: 4px;
   width: 50%;
   /* padding: 300px; */
   /* align-left: 190px; */
-  position: relative;
+  /* align: center */
+  position: fixed;
   top: 280px;
-  left: 290px;
+  left: 600px;
 }
 
 .tank_submit {
