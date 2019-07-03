@@ -341,8 +341,9 @@ a {
 
 .money_problems {
   color: white;
+  text-align: center;
   position: relative;
-  left: 780px;
+  /* left: 780px; */
   top: 630px;
   font-family: 'Permanent Marker', regular;
   text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
