@@ -53,9 +53,6 @@ class TanksController < ApplicationController
 
   end
 
-
-
-
   def press
     tank = Tank.find(params[:id])
     tank.money += 1

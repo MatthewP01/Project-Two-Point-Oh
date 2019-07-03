@@ -6,6 +6,8 @@
 @import url('https://fonts.googleapis.com/css?family=Barriecito');
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Handlee');
+@import url('https://fonts.googleapis.com/css?family=Sigmar+One');
 
 html,body{
 background-image: url('https://cdn.pixabay.com/photo/2018/04/21/00/03/fantasy-3337385_960_720.jpg');
@@ -38,6 +40,7 @@ background-color: rgba(0,0,0,0.5) !important;
 
 .fishpic {
   position: absolute;
+  top: 50px;
   bottom: 100px;
   right: 0;
   width: 300px;
@@ -434,4 +437,30 @@ a {
   font-family: 'Permanent Marker', regular;
   text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
   color: white;
+}
+
+/* Fish Index */
+.market-title {
+  text-align: center;
+  font-family: 'Sigmar One', regular;
+  font-size: 140px;
+  text-shadow: #FFF 0px 0px 15px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px;
+}
+
+.fish_name {
+  font-family: 'Handlee', regular;
+  text-align: center;
+  font-size: 17px;
+  text-shadow: #FFF 0px 0px 15px, #adff2f 0px 0px 20px, #adff2f 0px 0px 40px, #adff2f 0px 0px 50px;
+}
+
+.price{
+  font-family: 'Handlee', regular;
+  font-size: 20px;
+  text-shadow: #adff2f;
+  text-align: center;
+}
+
+.fish_market {
+  background-image: url('https://s3.envato.com/files/229777847/Underwater%20Bubbles%20%2001_preview1.jpg')
 }
