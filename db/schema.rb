@@ -14,7 +14,6 @@ ActiveRecord::Schema.define(version: 2019_07_02_140034) do
 
   create_table "fish", force: :cascade do |t|
     t.string "name"
-    t.string "species"
     t.string "description"
     t.integer "cost"
     t.integer "tank_id"

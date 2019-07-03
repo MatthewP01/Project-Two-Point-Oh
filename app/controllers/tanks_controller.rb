@@ -37,12 +37,17 @@ class TanksController < ApplicationController
     @tank = Tank.find(params[:tank][:id])
     @fish = Fish.find(params[:fish_id])
 
-    if @tank.money > @fish.cost
+    if @tank.money > @fish.cost && !@tank.fish.include?(@fish)
       @tank.money -= @fish.cost
       @tank.fish << @fish
       @tank.save
     else
-      flash[:error] = "This tank has insufficient funds!"
+
+      if @tank.fish.include?(@fish)
+        flash[:error] = "This fish already lives in that tank!"
+      elsif @tank.money < @fish.cost
+        flash[:error] = "This tank has insufficient funds!"
+      end
       redirect_to fish_index_path
     end
 
