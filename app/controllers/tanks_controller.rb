@@ -1,5 +1,10 @@
 class TanksController < ApplicationController
 
+  def index
+    @tanks = Tank.all
+    render :index
+  end
+
   def show
     @tank = Tank.find(params[:id])
     render :show
@@ -28,7 +33,7 @@ class TanksController < ApplicationController
   end
 
   def purchase
-    
+
     @tank = Tank.find(params[:tank][:id])
     @fish = Fish.find(params[:fish_id])
 
