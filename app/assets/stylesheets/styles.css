@@ -12,6 +12,10 @@ background-image: url('https://cdn.pixabay.com/photo/2018/04/21/00/03/fantasy-33
 background-size: cover;
 /* background-repeat: no-repeat; */
 height: 100%;
+width: 100%;
+margin: 0px;
+padding: 0px;
+overflow-x: hidden;
 font-family: 'Hind Siliguri', sans-serif;
 }
 
@@ -344,5 +348,5 @@ a {
 
 .tank_show {
   background-image: url("tank1.png");
-  background-size: 1600px 861.25px;
+  height: 100%;
 }
