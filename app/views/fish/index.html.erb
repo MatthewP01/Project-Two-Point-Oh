@@ -4,20 +4,23 @@
 	</div>
 <% end %>
 
-<h1>Market</h1>
+<body class="fish_market">
+<h1 class="market-title">Market</h1>
 <div class="card-columns">
 <% @fish.each do |fish|%>
 	<div class="card">
 	  <div class="card-body">
-	  	<%= fish.name %><br>
+			<div class="fish_name">
+				<%= fish.name %><br>
+			</div>
 	  	<div class="fishpic">
-	  		<%= image_tag "#{fish.id}.png", size: "150x150", alt: "#{fish.name}" %><br><br>
+	  		<%= image_tag "#{fish.id}.png", size: "150x150", alt: "#{fish.name}"%><br><br>
 	  		<%= form_tag purchase_path do %>
-	  			<label>Price: <%= fish.cost %></label><br>
-			  	<label>Tank:</label>
-			  	<%= collection_select :tank, :id, Tank.all, :id, :name %>
+	  			<label class="price">Price: $<%= fish.cost %></label><br>
+			  	<label class = "price">Tank:</label>
+			  	<%= collection_select :tank, :id, Tank.all, :id, :name, class: "price" %>
 			  	<%= hidden_field_tag 'fish_id', fish.id %>
-			  	<%= submit_tag "Buy" %>
+			  	<%= submit_tag "Buy" , class: "price"%>
 	  		<% end %>
 	  	</div>
 
@@ -25,3 +28,4 @@
 	</div>
 <% end %>
 </div>
+</body>
