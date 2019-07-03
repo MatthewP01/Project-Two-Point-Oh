@@ -27,7 +27,7 @@
     </script>
 
     <% @tank.fish.each do |fish|%>
-      <div>
+      <div class="fish<%= fish.id %>">
           <%= image_tag "#{fish.id}.png", alt: "#{fish.name}" %>
       </div>
     <% end %>
