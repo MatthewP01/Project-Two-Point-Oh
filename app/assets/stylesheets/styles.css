@@ -267,10 +267,11 @@ margin-left: 4px;
 /* The Button - Got help from examples of interactive buttons */
 
 .button {
-  /* poisition: relative;
-  left: 700px;
-  top: 500px; */
-
+  poisition: relative;
+  top: 500px;
+  display: block;
+  margin: 0 auto;
+  /* align: center; */
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
