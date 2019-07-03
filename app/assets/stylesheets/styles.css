@@ -267,9 +267,10 @@ margin-left: 4px;
 /* The Button - Got help from examples of interactive buttons */
 
 .button {
-  poisition: relative;
+  /* poisition: relative;
   left: 700px;
-  top: 500px;
+  top: 500px; */
+
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
@@ -347,6 +348,12 @@ a {
 }
 
 .tank_show {
-  background-image: url("tank1.png");
-  height: 100%;
+  background-image: url("tank1a.png");
+  /* height: 120%;
+  width: 100%; */
+  /* max-width: 100%; */
+  /* max-height: 100%; */ */
+  /* height: auto; */
+  /* width: auto; */
+  background-size: 100% 100%;
 }
