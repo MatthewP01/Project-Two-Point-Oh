@@ -36,7 +36,7 @@ class TanksController < ApplicationController
       @tank.fish << @fish
       @tank.save
     else
-      flash.now[:error] = "This tank has insufficient funds!"
+      flash[:error] = "This tank has insufficient funds!"
       redirect_to fish_index_path
     end
 
