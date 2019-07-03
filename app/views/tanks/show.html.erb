@@ -17,6 +17,19 @@
   <h1 class = "tank_name"><%= @tank.name %></h1>
   <h2 class = "money_problems">$<%= @tank.money %></h2>
 
+    <!-- Navigation Corners -->
+    <div class="corner-left">
+      <span>
+        <%= link_to "Go to Your Tanks!", tanks_path, class: "tanks-link"%>
+      </span>
+    </div>
+    <div class="corner-right">
+      <span class="span">
+        <%= link_to "Go to Fish Market!", fish_index_path, class: "fish-link"%>
+      </span>
+    </div>
+
+
     <audio id="audio" src="/images/money_sounds.mp3" autoplay="false" ></audio>
     <a onclick="playSound();"> <%= button_to "PRE$$", "/tanks/#{@tank.id}/press", remote: true, class: "button"%></a>
     <script>
