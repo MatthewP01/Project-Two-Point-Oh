@@ -334,3 +334,7 @@ a {
   left: 780px;
   top: 630px;
 }
+
+.tank_show {
+  background-image: url("tank1.png");
+}
