@@ -33,6 +33,7 @@ class TanksController < ApplicationController
     @fish = Fish.find(params[:fish_id])
 
     if @tank.money > @fish.cost
+      @tank.money -= @fish.cost
       @tank.fish << @fish
       @tank.save
     else
