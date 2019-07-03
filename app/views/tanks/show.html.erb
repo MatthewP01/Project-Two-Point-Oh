@@ -15,8 +15,7 @@
 
 <body class="tank_show">
   <h1 class = "tank_name"><%= @tank.name %></h1>
-
-  <h2 class = "money_problems">$ <%= @tank.money %></h2>
+  <h2 class = "money_problems">$<%= @tank.money %></h2>
 
     <audio id="audio" src="/images/money_sounds.mp3" autoplay="false" ></audio>
     <a onclick="playSound();"> <%= button_to "PRE$$", "/tanks/#{@tank.id}/press", remote: true, class: "button"%></a>
