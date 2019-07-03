@@ -16,17 +16,7 @@
 <body class="tank_show">
   <h1 class = "tank_name"><%= @tank.name %></h1>
 
-
   <h2 class = "money_problems">$ <%= @tank.money %></h2>
-
-  <%# link_to "Add a 💚", "/posts/#{@post.id}?like=true" %>
-
-    <!-- <div class="button_link">
-      <%#= link_to "PRE$$", "/tanks/#{@tank.id}?press=true"%>
-    </div> -->
-
-
-
 
     <audio id="audio" src="/images/money_sounds.mp3" autoplay="false" ></audio>
     <a onclick="playSound();"> <%= button_to "PRE$$", "/tanks/#{@tank.id}/press", remote: true, class: "button"%></a>
@@ -36,4 +26,10 @@
           sound.play();
       }
     </script>
+
+    <% @tank.fish.each do |fish|%>
+      <div>
+          <%= image_tag "#{fish.id}.png", alt: "#{fish.name}" %>
+      </div>
+    <% end %>
 </body>
