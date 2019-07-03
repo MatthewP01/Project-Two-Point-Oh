@@ -1,14 +1,24 @@
-<h1 class = "tank_name"><%= @tank.name %></h1>
+<body class="tank_show">
+  <h1 class = "tank_name"><%= @tank.name %></h1>
 
 
-<h2 class = "money_problems"><%= @tank.money %></h2>
+  <h2 class = "money_problems">$ <%= @tank.money %></h2>
 
-<%# link_to "Add a 💚", "/posts/#{@post.id}?like=true" %>
+  <%# link_to "Add a 💚", "/posts/#{@post.id}?like=true" %>
 
-  <!-- <div class="button_link">
-    <%#= link_to "PRE$$", "/tanks/#{@tank.id}?press=true"%>
-  </div> -->
+    <!-- <div class="button_link">
+      <%#= link_to "PRE$$", "/tanks/#{@tank.id}?press=true"%>
+    </div> -->
 
 
 
-  <%= button_to "PRE$$", "/tanks/#{@tank.id}/press", remote: true, class: "button"%>
+
+    <audio id="audio" src="money_sounds.mp3" autoplay="false" ></audio>
+    <a onclick="playSound();"> <%= button_to "PRE$$", "/tanks/#{@tank.id}/press", remote: true, class: "button"%></a>
+    <script>
+    function playSound() {
+          var sound = document.getElementById("audio");
+          sound.play();
+      }
+    </script>
+</body>

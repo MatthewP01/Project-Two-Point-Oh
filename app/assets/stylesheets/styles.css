@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 @import url('https://fonts.googleapis.com/css?family=Barriecito');
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 html,body{
 background-image: url('https://cdn.pixabay.com/photo/2018/04/21/00/03/fantasy-3337385_960_720.jpg');
@@ -320,12 +321,15 @@ a {
   margin: auto;
   color: white;
   position: relative;
-  left: 640px;
-  color: #00FA9A;
+  top: 20px;
+  text-align: center;
+  /* color: #00FA9A; */
   font-family: 'Pacifico', regular;
   font-size: 60px;
   font-weight: normal;
-  text-shadow: 1px 1px 2px #082b34;
+  /* text-shadow: 1px 1px 2px #082b34; */
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #00FA9A, 0 0 30px #00FA9A, 0 0 40px #00FA9A, 0 0 55px #00FA9A, 0 0 75px #00FA9A;
+  color: #FFFFFF;
 }
 
 .money_problems {
@@ -333,4 +337,11 @@ a {
   position: relative;
   left: 780px;
   top: 630px;
+  font-family: 'Permanent Marker', regular;
+  text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+}
+
+.tank_show {
+  background-image: url("tank1.png");
+  background-size: 1600px 861.25px;
 }
