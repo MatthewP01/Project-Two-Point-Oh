@@ -384,11 +384,21 @@ a {
   z-index: 11;
 }
 
+@keyframes fishanim2 {
+  0% {transform: rotate(0deg);}
+  450% {transform: rotate(-180deg);}
+  100% {transform: rotate(-360deg);}
+}
+
 .fish2 {
   position: fixed;
   top: 100px;
   left: 100px;
   z-index: 11;
+  animation-name: fishanim2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
 }
 
 @keyframes fishanim3 {
@@ -422,11 +432,29 @@ a {
   z-index: 11;
 }
 
+@keyframes fishanim6 {
+  0% {left: 475px;}
+  13% {transform: rotate(20deg);}
+  25% {left: 525px;}
+  38% {transform: rotate(-20deg);}
+  50% {left: 475px;}
+  63% {transform: rotate(20deg);}
+  75% {left: 425px;}
+  88% {transform: rotate(-20deg);}
+  100% {left: 475px;
+        transform: rotate(0deg);}
+}
+
 .fish6 {
   position: fixed;
   top: 175px;
   left: 475px;
   z-index: 11;
+  animation-name: fishanim6;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  animation-timing-function: linear;
 }
 
 .fish7 {
@@ -436,11 +464,33 @@ a {
   z-index: 11;
 }
 
+@keyframes fishanim8 {
+  0% {top: 300px;
+      opacity: 1;}
+  50% {top: 150px;
+      opacity: 0.5;}
+  100% {top: 0px;
+      opacity: 0;}
+}
+
 .fish8 {
   position: fixed;
   top: 275px;
   left: 1070px;
   z-index: 11;
+  animation-name: fishanim8;
+  animation-duration: 4s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes fishanim9 {
+  0% {transform: scale(1);}
+  40% {transform: scale(1);}
+  50% {transform: scale(1.5);}
+  60% {transform: scale(1.5);}
+  100% {transform: scale(1);}
 }
 
 .fish9 {
@@ -454,11 +504,23 @@ a {
   animation-iteration-count: infinite;
 }
 
+@keyframes fishanim10 {
+  0% {left: 1000px;}
+  20% {left: 800px;}
+  50% {left: 800px;}
+  80% {left: 1000px;}
+  100% {left: 1000px;}
+}
+
 .fish10 {
   position: fixed;
   top: 550px;
   left: 1000px;
   z-index: 11;
+  animation-name: fishanim10;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
 }
 
 .fish11 {
@@ -468,11 +530,43 @@ a {
   z-index: 11;
 }
 
+@keyframes fishanim12 {
+  0% {top: 500px;
+      left: 50px;}
+  10% {top: 400px;
+      left: 75px;}
+  30% {top: 450px;
+      left: 75px;}
+  40% {top: 350px;
+      left: 100px;}
+  50% {top: 400px;
+      left: 110px;}
+  100% {top: 500px;
+      left: 50px;}
+}
+
 .fish12 {
   position: fixed;
   top: 500px;
   left: 50px;
   z-index: 11;
+  animation-name: fishanim12;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+.bubbles {
+  opacity: 0;
+  z-index: 9;
+  position: fixed;
+  left: 200px;
+  animation-name: fishanim8;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
 }
 /* Navigation Links */
 
@@ -683,3 +777,4 @@ a {
   position: fixed;
   top: 200px;
 }
+
