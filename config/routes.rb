@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get "/tanks", to: "tanks#index"
   get "/tanks/:id", to: "tanks#show"
   post "/sessions", to: "sessions#create"
-  post "/purchase", to: "tanks#purchase"
+  post "/tanks/purchase", to: "tanks#purchase"
   post "/tanks/:id/press", to: "tanks#press"
   delete "/logout", to: "sessions#destroy"
 

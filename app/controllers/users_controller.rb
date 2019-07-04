@@ -18,7 +18,7 @@ class UsersController < ApplicationController
       @user.save
       session[:user_id] = @user.id
       # byebug
-      redirect_to "/tanks/#{@user.id}"
+      redirect_to "/tanks/new"
     else
       flash.now[:error] = @user.errors.full_messages
       render :new

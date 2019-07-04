@@ -6,12 +6,12 @@ class SessionsController < ApplicationController
   end
 
   def create
-    # byebug
     user = User.find_by(email: params[:email])
     if user && user.authenticate(params[:password]) # Shortcircuiting
       session[:user_id] = user.id # The magic for making us logged in
       # redirect_to user_path(user)
-			redirect_to "/tanks/#{user.id}"
+			# redirect_to "/tanks/#{user.id}"
+      redirect_to "/tanks"
     else
 			flash.now[:error] = "Invalid e-mail or password"
       render 'new'

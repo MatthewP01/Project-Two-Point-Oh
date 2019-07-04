@@ -4,6 +4,7 @@ class Tank < ApplicationRecord
   has_many :fish
 
   validates :name, presence: true
+  validates :name, length: {maximum: 15}
 
   def name_and_money
     "#{self.name} - $#{self.money}"

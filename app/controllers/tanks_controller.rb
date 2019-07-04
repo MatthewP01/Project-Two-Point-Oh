@@ -3,7 +3,6 @@ class TanksController < ApplicationController
   before_action :authorized
 
   def index
-    # @tanks = Tank.all
     render :index
   end
 
@@ -39,12 +38,13 @@ class TanksController < ApplicationController
 
     @tank = Tank.find(params[:tank][:id])
     @fish = Fish.find(params[:fish_id])
+    # byebug
 
     if @tank.money > @fish.cost && !@tank.fish.include?(@fish)
       @tank.money -= @fish.cost
       @tank.fish << @fish
       @tank.save
-      redirect_to "tanks/#{@tank.id}"
+      redirect_to "/tanks/#{@tank.id}"
     else
 
       if @tank.fish.include?(@fish)

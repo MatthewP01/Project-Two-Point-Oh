@@ -1,12 +1,40 @@
-<% current_user.tanks.each do |tank| %>
-<%= tank.name %>
-<% end %>
+<body class = "tank_index">
 
-<% if logged_in? %>
-  <%# current_user.username %>
-    <%= form_tag "/logout", method: :delete do %>
-     <%= submit_tag "logout" %>
+<h1 class = "welcome">Welcome <%= current_user.name %> </h1>
+
+
+
+
+
+
+<div class="user_tanks">
+  <h3 class="user_tanks_start">Your Tanks:</h3>
+  <ul>
+    <% current_user.tanks.each do |tank| %>
+    <li class = "bullet_point"><%= link_to tank.name, "/tanks/#{tank.id}", class: "user_tanks_link" %></li>
     <% end %>
-  <% end %>
+  </ul>
 
-  <%= link_to "Create a new tank!", "/tanks/new" %>
+</div>
+
+<div class="new_tank">
+  <%= link_to "Make a new tank!", "/tanks/new", class: "tank_submit", id: "task_submit_index" %>
+</div>
+
+
+
+  <!-- Navigation Corners -->
+  <div class="corner-left">
+    <span>
+      <% if logged_in? %>
+        <%# current_user.username %>
+          <%= form_tag "/logout", method: :delete do %>
+           <%= submit_tag "logout", class: "submit_btn_2" %>
+          <% end %>
+        <% end %>
+    </span>
+  </div>
+
+
+
+  </body>

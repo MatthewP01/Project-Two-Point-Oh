@@ -12,6 +12,13 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 
   </head>
+
+  <% if flash.now[:error] %>
+  <div class="alert alert-primary" role="alert">
+    <%= flash.now[:error]%>
+  </div>
+  <% end %>
+
 <div class="tank_body">
 
 
@@ -21,7 +28,7 @@
   <div class="tank_form">
     <%= form_for @tank do |f| %>
     <%= f.text_field :name, placeholder: " 🐠 Fish Tank Name! 🐠" %><br>
-    <%= f.hidden_field :user_id, :value => @user.id %><br>
+    <%= f.hidden_field :user_id, :value => current_user.id %><br>
     <br>
       <%= f.submit class: "tank_submit"%>
     <% end %>
