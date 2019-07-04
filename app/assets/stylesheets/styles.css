@@ -625,3 +625,23 @@ a {
   z-index: 9;
 }
 
+#decoration-corner {
+  border-top: 150px solid green;
+	border-bottom: 150px solid transparent;
+	border-right: 150px solid transparent;
+}
+
+#decoration-corner-2 {
+  border-top: 150px solid green;
+	border-bottom: 150px solid transparent;
+	border-right: 150px solid transparent;
+  border-left: 150px solid transparent;
+}
+
+#decorations-link {
+  font-size: 14px;
+  position: fixed;
+  top: -20px;
+  right: -20px;
+  width: 100px;
+}
