@@ -3,6 +3,10 @@ class Tank < ApplicationRecord
   belongs_to :user
   has_many :fish_tanks
   has_many :fish, through: :fish_tanks
+
+  has_many :decoration_tanks
+  has_many :decorations, through: :decoration_tanks
+
   # has_many :fish
 
   validates :name, presence: true

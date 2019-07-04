@@ -1,0 +1,30 @@
+<% if flash[:error] %>
+<div class="alert alert-danger" role="alert">
+   <%= flash[:error] %>
+</div>
+<% end %>
+
+<body class="fish_market">
+   <h1 class="market-title">Market</h1>
+   <div class="card-columns">
+      <% @decorations.each do |decoration|%>
+      <div class="card">
+         <div class="card-body">
+            <div class="fish_name">
+               <%= decoration.name %><br>
+            </div>
+            <div class="fishpic">
+               <%= image_tag "#{decoration.id}.png", alt: "#{decoration.name}"%><br><br>
+               <%= form_tag tanks_purchase_path do %>
+               <label class="price">Price: $<%= decoration.cost %></label><br>
+               <label class = "price">Tank:</label>
+               <%= collection_select :tank, :id, current_user.tanks, :id, :name_and_money, class: "price" %>
+               <%= hidden_field_tag 'decoration_id', decoration.id %>
+               <%= submit_tag "Buy" , class: "price"%>
+               <% end %>
+            </div>
+         </div>
+      </div>
+      <% end %>
+   </div>
+</body>
