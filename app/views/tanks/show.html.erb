@@ -45,11 +45,10 @@
       </div>
     <% end %>
 
-    
-
-    <%= image_tag "d2.png", id: "i2"%>
-    <%= image_tag "d3.png", id: "i3"%>
-    <%= image_tag "d4.png", id: "i4"%>
-    <%= image_tag "d1.png", id: "i1"%>
+    <% @tank.decorations.each do |decoration| %>
+      <div class="dec<%= decoration.id %>">
+          <%= image_tag "d#{decoration.id}.png" %>
+      </div>
+    <% end %>
     
 </body>
