@@ -1,9 +1,0 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  tank_id: 1
-  fish_id: 1
-
-two:
-  tank_id: 1
-  fish_id: 1
