@@ -1,8 +1,15 @@
 <% if flash[:error] %>
-<div class="alert alert-danger" role="alert">
+<div class="alert alert-danger" role="alert", id= "decoration-alert">
    <%= flash[:error] %>
 </div>
 <% end %>
+
+<!-- Navigation Corners -->
+<div class="corner-left" id = "decoration-return">
+	<span>
+		<%= link_to "Return to Market!", fish_index_path, class: "tanks-link"%>
+	</span>
+</div>
 
 <body class="fish_market">
    <h1 class="market-title" id = "decorations-title"> Decorations </h1>
