@@ -294,6 +294,7 @@ margin-left: 4px;
   overflow: hidden;
   box-shadow: 0 5px 15px #193047;
   border-radius: 4px;
+  z-index: 20;
 }
 
 .button:hover {
@@ -464,3 +465,11 @@ a {
 .fish_market {
   background-image: url('https://s3.envato.com/files/229777847/Underwater%20Bubbles%20%2001_preview1.jpg')
 }
+
+/*img{
+  position:absolute;
+  top: 0px;
+  left: 0px;
+}*/
+
+

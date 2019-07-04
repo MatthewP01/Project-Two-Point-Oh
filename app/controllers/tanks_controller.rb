@@ -41,6 +41,7 @@ class TanksController < ApplicationController
       @tank.money -= @fish.cost
       @tank.fish << @fish
       @tank.save
+      redirect_to tank_path(@tank)
     else
 
       if @tank.fish.include?(@fish)
