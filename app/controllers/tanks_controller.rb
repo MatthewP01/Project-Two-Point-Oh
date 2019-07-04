@@ -61,19 +61,19 @@ class TanksController < ApplicationController
     @tank = Tank.find(params[:tank][:id])
     @decoration = Decoration.find(params[:decoration_id])
 
-    if @tank.money > @decoration.cost && !@decoration.fish.include?(@fish)
+    if @tank.money > @decoration.cost && !@tank.decorations.include?(@decoration)
       @tank.money -= @decoration.cost
       DecorationTank.create(tank_id: @tank.id, decoration_id: @decoration.id)
       @tank.save
       redirect_to "/tanks/#{@tank.id}"
     else
 
-      if @tank.fish.include?(@decoration)
+      if @tank.decoration.include?(@decoration)
         flash[:error] = "You already have this decoration!"
       elsif @tank.money < @decoration.cost
         flash[:error] = "This tank has insufficient funds!"
       end
-      redirect_to fish_index_path
+      redirect_to decorations_path
     end
 
   end
