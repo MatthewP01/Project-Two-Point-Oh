@@ -433,11 +433,20 @@ a {
   z-index: 11;
 }
 
+@keyframes fishanim9 {
+  0% {top: 125px;}
+  50% {top: 150px;}
+  100% {top: 125px;}
+}
+
 .fish9 {
   position: fixed;
   top: 125px;
   left: 700px;
   z-index: 11;
+  animation-name: fishanim9;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 .fish10 {
@@ -469,6 +478,7 @@ a {
 	border-top: 150px solid #f88379;
 	border-bottom: 150px solid transparent;
 	border-right: 150px solid transparent;
+  z-index: 12;
 }
 
 .corner-left span {
@@ -492,6 +502,7 @@ a {
 	border-bottom: 150px solid transparent;
 	border-right: 150px solid transparent;
   border-left: 150px solid transparent;
+  z-index: 12;
 }
 
 .corner-right span {
