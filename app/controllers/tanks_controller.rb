@@ -68,7 +68,7 @@ class TanksController < ApplicationController
       redirect_to "/tanks/#{@tank.id}"
     else
 
-      if @tank.decoration.include?(@decoration)
+      if @tank.decorations.include?(@decoration)
         flash[:error] = "You already have this decoration!"
       elsif @tank.money < @decoration.cost
         flash[:error] = "This tank has insufficient funds!"

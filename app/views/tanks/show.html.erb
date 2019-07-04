@@ -30,14 +30,16 @@
     </div>
 
 
-    <audio id="audio" src="/assets/money_sounds.mp3" autoplay="false" ></audio>
+    <audio id="audio" src="/assets/money_sounds.mp3" autoplay="fale" ></audio>
     <a onclick="playSound()"> <%= button_to "PRE$$", "/tanks/#{@tank.id}/press", remote: true, class: "button"%></a>
+
     <script>
     function playSound() {
           var sound = document.getElementById("audio");
           sound.play();
       }
     </script>
+
 
 
     <% @tank.fish.each do |fish|%>

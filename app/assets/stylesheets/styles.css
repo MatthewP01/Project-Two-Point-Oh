@@ -355,9 +355,10 @@ a {
 }
 
 .money_problems {
-  color: white;
+  color: #fffdd0;
   position: fixed;
   text-align: center;
+  z-index: 12;
 
   left: 48%;
   top: 574px;
@@ -418,11 +419,26 @@ a {
   animation-delay: 2s;
 }
 
+@keyframes fishanim4 {
+  0% {tranform: rotate(0deg);
+  top: 50px;}
+  50% {transform: rotate(30deg);
+  top: 10px;}
+  100% {transform: rotate(0deg);
+  top: 50px;}
+  /* from {tranform: rotate(0); }
+  to {transform: rotate(30deg); } */
+}
+
 .fish4 {
   position: fixed;
   top: 50px;
   left: 1000px;
   z-index: 11;
+  animation-name: fishanim4;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
 }
 
 .fish5 {
@@ -465,13 +481,11 @@ a {
 }
 
 @keyframes fishanim8 {
-  0% {top: 300px;
-      opacity: 1;}
-  50% {top: 150px;
-      opacity: 0.5;}
-  100% {top: 0px;
-      opacity: 0;}
+  0% {top: 300px;}
+  50% {top: 250px;}
+  100% {top: 300px;}
 }
+
 
 .fish8 {
   position: fixed;
@@ -479,10 +493,9 @@ a {
   left: 1070px;
   z-index: 11;
   animation-name: fishanim8;
-  animation-duration: 4s;
-  animation-delay: 4s;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
 }
 
 @keyframes fishanim9 {
@@ -556,12 +569,21 @@ a {
   animation-iteration-count: infinite;
 }
 
+@keyframes bubbles {
+  0% {top: 300px;
+      opacity: 1;}
+  50% {top: 150px;
+      opacity: 0.5;}
+  100% {top: 0px;
+      opacity: 0;}
+}
+
 .bubbles {
   opacity: 0;
   z-index: 9;
   position: fixed;
   left: 200px;
-  animation-name: fishanim8;
+  animation-name: bubbles;
   animation-duration: 3s;
   animation-delay: 2s;
   animation-iteration-count: infinite;
@@ -778,3 +800,17 @@ a {
   top: 200px;
 }
 
+#adjust-alert {
+  text-align: center;
+}
+
+#decoration-return {
+  border-top: 150px solid #FFD700;
+	border-bottom: 150px solid transparent;
+	border-right: 150px solid transparent;
+  font-family: 'Monoton', regular;
+}
+
+#decoration-alert {
+  text-align: center;
+}
