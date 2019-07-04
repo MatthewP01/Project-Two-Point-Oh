@@ -24,8 +24,8 @@ Fish.create(name: "Leoniefish", cost: 275)
 Fish.create(name: "Prince the Seahorse", cost: 500)
 
 Decoration.create(name: "Pebbles", cost: 100)
-Decoration.create(name: "Seaweed", cost: 200)
 Decoration.create(name: "Squidward's House", cost: 300)
+Decoration.create(name: "Seaweed", cost: 200)
 Decoration.create(name: "CS51 Sign", cost:400)
 
 

@@ -654,7 +654,16 @@ a {
 }
 
 #decorations-columns {
-  position: fixed;
+  position: absolute;
   left: 300px;
+}
 
+.fishpic_center {
+  position: relative;
+  left: 70px;
+}
+
+#center_price {
+  position: fixed;
+  top: 200px;
 }
