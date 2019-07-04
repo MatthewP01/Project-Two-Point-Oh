@@ -41,7 +41,7 @@ class TanksController < ApplicationController
 
     if @tank.money > @fish.cost && !@tank.fish.include?(@fish)
       @tank.money -= @fish.cost
-      @tank.fish << @fish
+      FishTank.create(tank_id: @tank.id, fish_id: @fish.id)
       @tank.save
       redirect_to "/tanks/#{@tank.id}"
     else

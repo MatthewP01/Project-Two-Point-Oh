@@ -4,7 +4,7 @@ class CreateFish < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :description
       t.integer :cost
-      t.integer :tank_id
+      # t.integer :tank_id
 
       t.timestamps
     end
