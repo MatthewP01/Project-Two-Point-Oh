@@ -4,6 +4,18 @@
 	</div>
 <% end %>
 
+<!-- Navigation Corners -->
+<div class="corner-left" id = "decoration-corner">
+	<span>
+		<%= link_to "Go to Your Tanks!", tanks_path, class: "tanks-link"%>
+	</span>
+</div>
+<div class="corner-right" id = "decoration-corner-2">
+	<span class="span">
+		<%= link_to "Go to Decoration Store!", decorations_path, class: "fish-link", id: "decorations-link"%>
+	</span>
+</div>
+
 <body class="fish_market">
 <h1 class="market-title">Market</h1>
 <div class="card-columns">
