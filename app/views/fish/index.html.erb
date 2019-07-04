@@ -14,8 +14,8 @@
 				<%= fish.name %><br>
 			</div>
 	  	<div class="fishpic">
-	  		<%= image_tag "#{fish.id}.png", size: "150x150", alt: "#{fish.name}"%><br><br>
-	  		<%= form_tag tanks_purchase_path do %>
+	  		<%= image_tag "#{fish.id}.png", alt: "#{fish.name}"%><br><br>
+	  		<%= form_tag purchase_path do %>
 	  			<label class="price">Price: $<%= fish.cost %></label><br>
 			  	<label class = "price">Tank:</label>
 			  	<%= collection_select :tank, :id, current_user.tanks, :id, :name_and_money, class: "price" %>

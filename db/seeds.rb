@@ -10,19 +10,26 @@ Fish.destroy_all
 Fish.create(name: "Xavierfish", cost: 50)
 Fish.create(name: "Peterfish", cost: 125)
 Fish.create(name: "Max the Shrimp", cost: 200)
-Fish.create(name: "Leoniefish", cost: 275)
-Fish.create(name: "Princehorse", cost: 500)
+Fish.create(name: "Rina the Shark", cost: 300)
 
 Fish.create(name: "Richard the Eel", cost: 75)
 Fish.create(name: "Mattopus", cost: 150)
-Fish.create(name: "Elijah the Snail", cost: 225)
-Fish.create(name: "Rina the Shark", cost: 300)
-Fish.create(name: "Gigi the Sea Turtle", cost: 500)
-
+Fish.create(name: "Jennafish", cost: 250)
+Fish.create(name: "Gigi the Narwhal", cost: 500)
 
 Fish.create(name: "Roxannefish", cost: 100)
 Fish.create(name: "Echo the Crab", cost: 175)
-Fish.create(name: "Jennafish", cost: 250)
+Fish.create(name: "Leoniefish", cost: 275)
+Fish.create(name: "Prince the Seahorse", cost: 500)
+
+
+
+
+
+
+
+
+
 
 
 puts "Seed Complete! 🐠"

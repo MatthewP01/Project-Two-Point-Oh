@@ -38,7 +38,6 @@ class TanksController < ApplicationController
 
     @tank = Tank.find(params[:tank][:id])
     @fish = Fish.find(params[:fish_id])
-    # byebug
 
     if @tank.money > @fish.cost && !@tank.fish.include?(@fish)
       @tank.money -= @fish.cost
