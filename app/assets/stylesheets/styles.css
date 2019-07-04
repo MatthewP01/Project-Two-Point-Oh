@@ -9,6 +9,7 @@
 @import url('https://fonts.googleapis.com/css?family=Handlee');
 @import url('https://fonts.googleapis.com/css?family=Sigmar+One');
 @import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
 
 html,body{
 background-image: url('https://cdn.pixabay.com/photo/2018/04/21/00/03/fantasy-3337385_960_720.jpg');
@@ -441,7 +442,7 @@ a {
 
 .fish10 {
   position: fixed;
-  top: 550px;  
+  top: 550px;
   left: 1000px;
   z-index: 11;
 }
@@ -644,4 +645,16 @@ a {
   top: -20px;
   right: -20px;
   width: 100px;
+}
+
+#decorations-title {
+  font-size: 95px;
+  font-family: "Great Vibes", regular;
+  text-shadow: #FFF 0px 0px 15px, green 0px 0px 40px, green 0px 0px 50px;
+}
+
+#decorations-columns {
+  position: fixed;
+  left: 300px;
+
 }
