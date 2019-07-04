@@ -366,7 +366,7 @@ a {
 }
 
 .tank_show {
-  background-image: url("/assets/images/tank1a.png");
+  background-image: url("tank1a.png");
   /* height: 120%;
   width: 100%; */
   /* max-width: 100%; */
