@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get "/tanks/:id", to: "tanks#show"
   post "/sessions", to: "sessions#create"
   post "/tanks/purchase", to: "tanks#purchase"
+  post "/tanks/purchase_decoration", to: "tanks#purchase_decoration"
   post "/tanks/:id/press", to: "tanks#press"
   delete "/logout", to: "sessions#destroy"
 

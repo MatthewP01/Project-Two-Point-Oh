@@ -56,6 +56,28 @@ class TanksController < ApplicationController
 
   end
 
+  def purchase_decoration
+
+    @tank = Tank.find(params[:tank][:id])
+    @decoration = Decoration.find(params[:decoration_id])
+
+    if @tank.money > @decoration.cost && !@decoration.fish.include?(@fish)
+      @tank.money -= @decoration.cost
+      DecorationTank.create(tank_id: @tank.id, decoration_id: @decoration.id)
+      @tank.save
+      redirect_to "/tanks/#{@tank.id}"
+    else
+
+      if @tank.fish.include?(@decoration)
+        flash[:error] = "You already have this decoration!"
+      elsif @tank.money < @decoration.cost
+        flash[:error] = "This tank has insufficient funds!"
+      end
+      redirect_to fish_index_path
+    end
+
+  end
+
   def press
     tank = Tank.find(params[:id])
     tank.money += 1
