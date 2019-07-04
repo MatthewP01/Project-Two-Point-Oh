@@ -380,72 +380,84 @@ a {
   position: fixed;
   top: 150px;
   left: 900px;
+  z-index: 11;
 }
 
 .fish2 {
   position: fixed;
   top: 100px;
   left: 100px;
+  z-index: 11;
 }
 
 .fish3 {
   position: fixed;
   top: 300px;
   left: 600px;
+  z-index: 11;
 }
 
 .fish4 {
   position: fixed;
   top: 50px;
   left: 1000px;
+  z-index: 11;
 }
 
 .fish5 {
   position: fixed;
   top: 400px;
   left: 200px;
+  z-index: 11;
 }
 
 .fish6 {
   position: fixed;
-  top: 375px;
-  left: 825px;
+  top: 175px;
+  left: 475px;
+  z-index: 11;
 }
 
 .fish7 {
   position: fixed;
   top: 350px;
   left: 450px;
+  z-index: 11;
 }
 
 .fish8 {
   position: fixed;
   top: 275px;
   left: 1070px;
+  z-index: 11;
 }
 
 .fish9 {
   position: fixed;
   top: 125px;
   left: 700px;
+  z-index: 11;
 }
 
 .fish10 {
   position: fixed;
   top: 550px;  
   left: 1000px;
+  z-index: 11;
 }
 
 .fish11 {
   position: fixed;
   top: 150px;
   left: 300px;
+  z-index: 11;
 }
 
 .fish12 {
   position: fixed;
   top: 500px;
   left: 50px;
+  z-index: 11;
 }
 /* Navigation Links */
 
@@ -590,18 +602,26 @@ a {
 }
 
 .dec1{
+  position: fixed;
+  bottom: 1px;
   z-index: 10;
 }
 
 .dec2{
+  position: fixed;
+  bottom: 1px;
   z-index: 7;
 }
 
 .dec3{
+  position: fixed;
+  bottom: 1px;
   z-index: 8;
 }
 
 .dec4{
+  position: fixed;
+  bottom: 1px;
   z-index: 9;
 }
 

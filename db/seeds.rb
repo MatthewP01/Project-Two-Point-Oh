@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 Fish.destroy_all
+Decoration.destroy_all
 
 Fish.create(name: "Xavierfish", cost: 50)
 Fish.create(name: "Peterfish", cost: 125)
@@ -22,9 +23,10 @@ Fish.create(name: "Echo the Crab", cost: 175)
 Fish.create(name: "Leoniefish", cost: 275)
 Fish.create(name: "Prince the Seahorse", cost: 500)
 
-
-
-
+Decoration.create(name: "Pebbles", cost: 100)
+Decoration.create(name: "Seaweed", cost: 200)
+Decoration.create(name: "Squidward's House", cost: 300)
+Decoration.create(name: "CS51 Sign", cost:400)
 
 
 
