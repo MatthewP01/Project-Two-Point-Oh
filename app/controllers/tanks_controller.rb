@@ -8,10 +8,14 @@ class TanksController < ApplicationController
 
   def show
     @tank = Tank.find(params[:id])
-    render :show
-    if params[:press]
-      @tank.money += 1
-      @tank.save
+    if current_user == @tank.user
+      render :show
+      if params[:press]
+        @tank.money += 1
+        @tank.save
+      end
+    else
+      redirect_to "/tanks"
     end
   end
 
