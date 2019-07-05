@@ -191,9 +191,8 @@ margin-left: 4px;
 .tank_header{
   /* margin-left: 489px; */
   position: absolute;
-  left: 380px;
+  left: 330px;
   top: 150px;
-  /* text-align: center; */
   color: #CEF0D4;
   font-family: 'Righteous', regular;
   font-size: 70px;
@@ -209,7 +208,7 @@ margin-left: 4px;
   /* align: center */
   position: absolute;
   top: 280px;
-  /* left: 10px; */
+  left: -50px;
 }
 
 .tank_submit {
@@ -808,9 +807,14 @@ a {
   border-top: 150px solid #FFD700;
 	border-bottom: 150px solid transparent;
 	border-right: 150px solid transparent;
-  font-family: 'Monoton', regular;
 }
 
 #decoration-alert {
   text-align: center;
+  font-family: 'Great Vibes', regular;
+  font-size: 32px;
+}
+
+.new-tank-alert {
+  overflow: hidden;
 }

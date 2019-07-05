@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :decorations, only: [:index]
   resources :tanks, only: [:new, :create]
 
-  root to: "users#new"
+  root to: "sessions#new"
 
   get "/register", to: "users#new"
   get "/login", to: "sessions#new"
