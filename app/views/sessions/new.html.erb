@@ -14,16 +14,16 @@
   <%= flash[:error]%>
 </div>
 <% end %>
+<h1 class="app-title">TankyTank</h1>
+<!-- <p class="xavier">Xavier Ruiz</p> -->
+<!-- <p class="matt">Matt Peoples</p> -->
 <div class="container">
 	<div class="d-flex justify-content-center h-100">
     <div class="card">
 			<div class="card-header">
-        <h2>Log In</h2>
+        <h2 class="log-in">Log In</h2>
       </div>
       <div class="d-flex justify-content-center">
-        <div class="brand_logo_container">
-          <img src="https://i.pinimg.com/originals/1a/c8/b4/1ac8b47a3a3cb484a44ec6903bfd75d6.jpg" class="brand_logo" alt="Logo">
-        </div>
       </div>
       <div class="card-body">
       <%= form_tag "/sessions" do %>
