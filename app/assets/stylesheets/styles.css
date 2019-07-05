@@ -438,7 +438,13 @@ a {
   animation-name: fishanim4;
   animation-duration: 3s;
   animation-iteration-count: infinite;
-  animation-delay: 1s;
+  animation-delay: 2s;
+}
+
+@keyframes fishanim5 {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(-30deg);}
+  100% {transform: rotate(0deg);}
 }
 
 .fish5 {
@@ -446,6 +452,10 @@ a {
   top: 400px;
   left: 200px;
   z-index: 11;
+  animation-name: fishanim5;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
 }
 
 @keyframes fishanim6 {
@@ -473,11 +483,25 @@ a {
   animation-timing-function: linear;
 }
 
+@keyframes fishanim7 {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(-30deg);
+      left: 400px;
+      top: 375px;}
+  100% {transform: rotate(0deg);
+      left: 450px;
+      top: 350px;}
+}
+
 .fish7 {
   position: fixed;
   top: 350px;
   left: 450px;
   z-index: 11;
+  animation-name: fishanim7;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
 }
 
 @keyframes fishanim8 {
@@ -494,7 +518,7 @@ a {
   z-index: 11;
   animation-name: fishanim8;
   animation-duration: 0.5s;
-  animation-delay: 1s;
+  animation-delay: 2s;
   animation-iteration-count: infinite;
 }
 
@@ -513,7 +537,7 @@ a {
   z-index: 11;
   animation-name: fishanim9;
   animation-duration: 4s;
-  animation-delay: 4s;
+  animation-delay: 2s;
   animation-iteration-count: infinite;
 }
 
@@ -536,11 +560,24 @@ a {
   animation-iteration-count: infinite;
 }
 
+@keyframes fishanim11 {
+  0% {top: 150px;}
+  25% {transform: rotate(20deg);}
+  50% {top: 125px;}
+  75% {transform: rotate(-20deg);}
+  100% {top: 150px;
+        transform: rotate(0deg);}
+}
+
 .fish11 {
   position: fixed;
   top: 150px;
   left: 300px;
   z-index: 11;
+  animation-name: fishanim11;
+  animation-duration: 6s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes fishanim12 {
@@ -564,6 +601,7 @@ a {
   left: 50px;
   z-index: 11;
   animation-name: fishanim12;
+  animation-timing-function: linear;
   animation-duration: 5s;
   animation-delay: 2s;
   animation-iteration-count: infinite;
