@@ -18,3 +18,19 @@
 //   e.preventDefault()
 //   console.log("works")
 // })
+
+
+document.addEventListener('DOMContentLoaded', function(){
+  console.log("Help ")
+  function playSound() {
+        var sound = document.getElementById("audio");
+        console.log("why")
+        sound.play();
+  }
+
+  let pressButton = document.querySelector('.sound-button')
+  if(pressButton !== null && pressButton !== undefined){
+    console.log("kill")
+    pressButton.addEventListener('click', playSound)
+  }
+})

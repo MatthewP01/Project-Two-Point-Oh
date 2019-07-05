@@ -13,13 +13,14 @@
 
   </head>
 
-  <% if flash.now[:error] %>
-  <div class="alert alert-primary" role="alert">
-    <%= flash.now[:error]%>
-  </div>
-  <% end %>
+
 
 <div class="tank_body">
+  <% if flash.now[:error] %>
+  <div class="alert alert-primary">
+    <%= flash.now[:error][0]%>
+  </div>
+  <% end %>
 
 
   <h1 class="tank_header">Create a New Tank!</h1>

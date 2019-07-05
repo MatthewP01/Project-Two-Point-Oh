@@ -1,3 +1,5 @@
+require 'screencap'
+
 <head>
 <title>Your Tank</title>
  <!--Made with love by Mutiullah Samim -->
@@ -30,17 +32,10 @@
     </div>
 
 
-    <audio id="audio" src="/assets/money_sounds.mp3" autoplay="fale" ></audio>
-    <a onclick="playSound()"> <%= button_to "PRE$$", "/tanks/#{@tank.id}/press", remote: true, class: "button"%></a>
-
-    <script>
-    function playSound() {
-          var sound = document.getElementById("audio");
-          sound.play();
-      }
-    </script>
-
-
+    <audio id="audio" autoplay="false">
+      <source src="/assets/money_sounds.mp3" type="audio/mpeg" />
+    </audio>
+    <%= button_to "PRE$$", "/tanks/#{@tank.id}/press", remote: true, class: "button sound-button" %>
 
     <% @tank.fish.each do |fish|%>
       <div class="fish<%= fish.id %>">
@@ -54,4 +49,8 @@
       </div>
     <% end %>
     <%= image_tag "bubbles.png", class: "bubbles" %>
+     
+
+    f = Screencap::Fetcher.new("")
+    screenshot = f.fetch
 </body>
