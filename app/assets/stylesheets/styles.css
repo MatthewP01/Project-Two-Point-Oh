@@ -12,27 +12,27 @@
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
 
 html,body{
-background-image: url('https://cdn.pixabay.com/photo/2018/04/21/00/03/fantasy-3337385_960_720.jpg');
-background-size: cover;
-height: 100%;
-width: 100%;
-margin: 0px;
-padding: 0px;
-overflow-x: hidden;
-font-family: 'Hind Siliguri', sans-serif;
+  background-image: url('https://cdn.pixabay.com/photo/2018/04/21/00/03/fantasy-3337385_960_720.jpg');
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: 'Hind Siliguri', sans-serif;
 }
 
 .container{
-height: 100%;
-align-content: center;
+  height: 100%;
+  align-content: center;
 }
 
 .card{
-height: 370px;
-margin-top: auto;
-margin-bottom: auto;
-width: 350px;
-background-color: rgba(0,0,0,0.5) !important;
+  height: 370px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 350px;
+  background-color: rgba(0,0,0,0.5) !important;
 }
 
 .card-body {
@@ -96,76 +96,75 @@ background-color: rgba(0,0,0,0.5) !important;
 }
 
 .card-header h3{
-color: white;
+  color: white;
 }
 
 .social_icon{
-position: absolute;
-right: 20px;
-top: -45px;
+  position: absolute;
+  right: 20px;
+  top: -45px;
 }
 
 .input-group-prepend span{
-width: 50px;
-background-color: #FFC312;
-color: black;
-border:0 !important;
+  width: 50px;
+  background-color: #FFC312;
+  color: black;
+  border:0 !important;
 }
 
 input:focus{
-outline: 0 0 0 0  !important;
-box-shadow: 0 0 0 0 !important;
-
+  outline: 0 0 0 0  !important;
+  box-shadow: 0 0 0 0 !important;
 }
 
 .remember{
-color: white;
+  color: white;
 }
 
 .remember input
 {
-width: 20px;
-height: 20px;
-margin-left: 15px;
-margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  margin-right: 5px;
 }
 
 .submit_btn{
-color: black;
-font-size: 18px;
-font-family: 'Luckiest Guy';
-background-color: #FFC312;
-width: 200px;
+  color: black;
+  font-size: 18px;
+  font-family: 'Luckiest Guy';
+  background-color: #FFC312;
+  width: 200px;
 }
 
 .submit_btn:hover{
-color: white;
-background-color: grey;
+  color: white;
+  background-color: grey;
 }
 
-.submit_btn_2 {
-color: black;
-font-size: 18px;
-font-family: 'Luckiest Guy';
-background-color: #FFC312;
-width: 100px;
+  .submit_btn_2 {
+  color: black;
+  font-size: 18px;
+  font-family: 'Luckiest Guy';
+  background-color: #FFC312;
+  width: 100px;
 }
 
 .submit_btn_2:hover{
-color: white;
-background-color: grey;
+  color: white;
+  background-color: grey;
 }
 
 .links{
-color: white;
+  color: white;
 }
 
 .links a{
-margin-left: 4px;
+  margin-left: 4px;
 }
 
 .login_container {
- margin: auto;
+  margin: auto;
 }
 
 .register_link {
@@ -179,7 +178,6 @@ margin-left: 4px;
   margin-left: 130px;
   font-size: 3.0em;
 }
-
 
 /* Tank New */
 
@@ -589,7 +587,6 @@ a {
   opacity: 0;
   z-index: 9;
   position: fixed;
-  left: 200px;
   animation-name: bubbles;
   animation-duration: 3s;
   animation-delay: 2s;
