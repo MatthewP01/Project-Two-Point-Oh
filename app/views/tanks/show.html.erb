@@ -1,5 +1,3 @@
-require 'screencap'
-
 <head>
 <title>Your Tank</title>
  <!--Made with love by Mutiullah Samim -->
@@ -31,11 +29,7 @@ require 'screencap'
       </span>
     </div>
 
-
-    <audio id="audio" autoplay="false">
-      <source src="/assets/money_sounds.mp3" type="audio/mpeg" />
-    </audio>
-    <%= button_to "PRE$$", "/tanks/#{@tank.id}/press", remote: true, class: "button sound-button" %>
+    <%= button_to "PRE$$", "/tanks/#{@tank.id}/press", remote: true %>
 
     <% @tank.fish.each do |fish|%>
       <div class="fish<%= fish.id %>">
@@ -48,9 +42,7 @@ require 'screencap'
           <%= image_tag "d#{decoration.id}.png" %>
       </div>
     <% end %>
-    <%= image_tag "bubbles.png", class: "bubbles" %>
-     
 
-    f = Screencap::Fetcher.new("")
-    screenshot = f.fetch
+    <%= image_tag "bubbles.png", class: "bubbles" %>
+
 </body>
