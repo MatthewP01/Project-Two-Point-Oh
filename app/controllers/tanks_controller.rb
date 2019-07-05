@@ -61,7 +61,7 @@ class TanksController < ApplicationController
     @tank = Tank.find(params[:tank][:id])
     @decoration = Decoration.find(params[:decoration_id])
 
-    if @tank.money > @decoration.cost && !@tank.decorations.include?(@decoration)
+    if @tank.money >= @decoration.cost && !@tank.decorations.include?(@decoration)
       @tank.money -= @decoration.cost
       DecorationTank.create(tank_id: @tank.id, decoration_id: @decoration.id)
       @tank.save
