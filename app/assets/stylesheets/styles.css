@@ -10,6 +10,7 @@
 @import url('https://fonts.googleapis.com/css?family=Sigmar+One');
 @import url('https://fonts.googleapis.com/css?family=Monoton');
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
 
 html,body{
   background-image: url('https://cdn.pixabay.com/photo/2018/04/21/00/03/fantasy-3337385_960_720.jpg');
@@ -820,4 +821,29 @@ a {
 
 .new-tank-alert {
   overflow: hidden;
+}
+
+.log-in {
+  position: relative;
+  top: -20px;
+}
+
+@keyframes titleanim {
+  0% {color: white}
+  25% {color:  #ffe5b4}
+  50% {color: #CCCCFF}
+  75% {color: #98ff98}
+  100% {color: white}
+}
+
+.app-title {
+  background-color: #FF7F50;
+  text-align: center;
+  font-family: 'Pacifico', regular;
+  font-size: 70px;
+  /* margin-top: 75px; */
+  color: white;
+  animation-name: titleanim;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }

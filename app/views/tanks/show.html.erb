@@ -18,7 +18,7 @@
   <h1 class = "tank_name"><%= @tank.name %></h1>
   <h2 class = "money_problems">$<%= @tank.money %></h2>
 
-    <!-- Navigation Corners -->
+  <!-- Navigation Corners -->
     <div class="corner-left">
       <span>
         <%= link_to "Go to Your Tanks!", tanks_path, class: "tanks-link"%>
@@ -30,7 +30,7 @@
       </span>
     </div>
 
-    <%= button_to "PRE$$", "/tanks/#{@tank.id}/press", remote: true %>
+    <%= button_to "PRE$$", "/tanks/#{@tank.id}/press", remote: true, class: "button" %>
 
     <% @tank.fish.each do |fish|%>
       <div class="fish<%= fish.id %>">
