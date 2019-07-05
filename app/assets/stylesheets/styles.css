@@ -576,11 +576,11 @@ a {
 }
 
 @keyframes bubbles {
-  0% {top: 300px;
+  0% {top: 0px;
       opacity: 1;}
-  50% {top: 150px;
+  50% {top: -150px;
       opacity: 0.5;}
-  100% {top: 0px;
+  100% {top: -300px;
       opacity: 0;}
 }
 
